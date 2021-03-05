@@ -62,15 +62,15 @@ namespace TRAINS
             }
             Station last = null;
             Console.WriteLine("Время путей между станциями ");
-            foreach (var s in Stations)
+            foreach (var x in Stations)
             {
                 if (last is null)
                 {
-                    last = s;
+                    last = x;
                     continue;
                 }
-                var t = TimeGoing(last, s);
-                Console.WriteLine($"Время в пути между станцией {s.Name} и {last.Name} : {t}");
+                var t = TimeGoing(last, x);
+                Console.WriteLine($"Время в пути между станцией {x.Name} и {last.Name} : {t}");
             }
 
         }
